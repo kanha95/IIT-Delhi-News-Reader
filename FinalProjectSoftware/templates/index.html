@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block header%} 
+Home Page
+{% endblock %}
+
+{% block body%} 
+
+	<div class="form-group">
+		<form method="post" action="{{ url_for('menuEnglish') }}">
+			<input type="submit" value="Example News Articles English" name="menuEnglish"  class="btn-primary btn-lg btn-block" ></input>
+		</form>
+		<form method="post" action="{{ url_for('exampleUrdu') }}">
+			<input type="submit" value="Example News Articles Urdu" name="exampleUrdu"  class="btn-primary btn-lg btn-block" ></input>
+		</form>
+		<form method="post" action="{{ url_for('readEnglish') }}">
+			<input type="submit" value="Manually Input & Read English News Articles" name="readEnglish"  class="btn-primary btn-lg btn-block" ></input>
+		</form>
+		<form method="post" action="{{ url_for('goLive') }}">
+			<input type="submit" value="Go Live English News Articles" name="golive"  class="btn-primary btn-lg btn-block" ></input>
+		</form>
+		<form method="post" action="{{ url_for('readUrdu') }}">
+			<input type="submit" value="Manually Input & Read Urdu News Articles" name="readUrdu"  class="btn-primary btn-lg btn-block" ></input>
+		</form>
+		
+	</div>
+
+
+
+
+{% endblock %}
+
+
+
+

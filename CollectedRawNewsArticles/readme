@@ -1,0 +1,32 @@
+Make sure you have python3 and pip3 installed installed.
+Install ijson using the command :- pip3 install ijson
+
+-------------------------------------------------------------------------------------
+
+Commands to extract the text files:-
+
+python3 pythonFileName fileToParse outputFolderName numberOfArticlesToGenerate
+
+Note the the maximum number of articles in news_kashmir_dump.json is 33775 and in news_India_dump.json is 0.5million.
+So your numberOfArticlesToGenerate range should be within the range.
+
+--------------------------------------------------------------------------------------
+
+Example :- 
+Kashmir Articles:-
+python3 parsing_json.py news_kashmir_dump.json Kashmir 100
+
+Indian Articles:-
+python3 parsing_json.py news_India_dump.json India 10
+
+---------------------------------------------------------------------------------------
+
+To generate all the files use the following commands:-
+Kashmir Articles:-
+python3 parsing_json.py news_kashmir_dump.json Kashmir -1
+
+
+Indian Articles:-
+python3 parsing_json.py news_India_dump.json India -1
+
+

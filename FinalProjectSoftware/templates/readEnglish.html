@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block header%} 
+Read Article
+{% endblock %}
+
+{% block body%} 
+
+	<div class="form-group">
+		<form method="post" action="{{ url_for('showEnglish') }}">
+  			<label for="newsArticle">Input you news article:</label>
+  			<textarea class="form-control" rows="10" name ="newsArticle"></textarea>
+		
+  	<div> &nbsp;</div>
+  	<div>Select Chunking Style &nbsp; &nbsp; <select name="dropdown">
+					<option value="-1">Default</option>
+    					<option value="1">Sentence Wise</option>
+					<option value="2">Phrase Wise</option>
+					<option value="3">Chunk Wise</option>
+  				</select></div>
+ 	<div> &nbsp;</div>
+
+			
+
+			<input type="submit" value="submit" class="btn-primary btn-lg btn-block" ></input>
+		</form>
+	</div>
+
+
+
+
+{% endblock %}
+
+
+
+

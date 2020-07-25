@@ -1,0 +1,33 @@
+To train using NBSVM:-
+
+bash run.sh 1
+
+To train using BERT:-
+
+bash run.sh 2
+
+To train using MLSTM:-
+
+bash run.sh 3
+
+
+---------------------------------------------------------
+
+You can also train manually using the below commands:-
+
+To train the classifier use the commands:-
+python3 runDistilBert.py
+
+or
+
+python3 runMLSTM.py
+
+or
+
+python3 runNBSVM.py
+
+----------------------------------------------------------
+
+Once the classifer model is trained it is stored inside 'Prediction Classifiers'.
+
+Transfer the model from there to 'Software/FinalProjectSoftware/models'.

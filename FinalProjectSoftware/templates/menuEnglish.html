@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block header%} 
+Home Page
+{% endblock %}
+
+{% block body%} 
+
+	<div class="form-group">
+		<form method="post" action="{{ url_for('exampleEnglish') }}">
+			<input type="submit" value="Demo" name="exampleEnglish"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="Army" name="exampleEnglish"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="Isro" name="exampleEnglish"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="India" name="exampleEnglish"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="Drdo" name="exampleEnglish"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="Kashmir" name="exampleEnglish"  class="btn-primary btn-lg btn-block" ></input>
+		</form>
+		
+	</div>
+
+
+
+
+{% endblock %}
+
+
+
+

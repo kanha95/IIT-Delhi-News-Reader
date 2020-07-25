@@ -1,0 +1,26 @@
+for NBSVM model:-
+bash run.sh 1
+
+for BERT:-
+bash run.sh 2
+
+for MLSTM:-
+bash run.sh 3
+
+for Default:-
+bash run.sh 4
+
+
+--------------------------------------------
+Manually you can run these commands:-
+
+source env/bin/activate
+pip3 install -r requirements.txt
+python3 -m spacy download en_core_web_sm
+python3 app.py 1 (for NBSVM)
+python3 app.py 2 (for BERT)
+python3 app.py 3 (for MLSTM)
+python3 app.py 4 (for Default Original)
+
+
+

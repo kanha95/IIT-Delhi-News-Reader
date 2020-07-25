@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header%} 
+Top 10 News Headlines:-
+{% endblock %}
+
+{% block body%} 
+
+	{% autoescape false %}
+	{{data}}
+	{% endautoescape %}
+
+{% endblock %}
+
+
+
+

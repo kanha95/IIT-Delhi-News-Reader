@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header%} 
+Home Page
+{% endblock %}
+
+{% block body%} 
+
+	<div class="form-group">
+		<form method="post" action="{{ url_for('showExample') }}">
+			<input type="submit" value="drdo article-1" name="showExampleNumber"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="drdo article-2" name="showExampleNumber"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="drdo article-3" name="showExampleNumber"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="drdo article-4" name="showExampleNumber"  class="btn-primary btn-lg btn-block" ></input>
+			<input type="submit" value="drdo article-5" name="showExampleNumber"  class="btn-primary btn-lg btn-block" ></input>
+		</form>
+		
+	</div>
+
+
+
+
+{% endblock %}
+
+
+
+
